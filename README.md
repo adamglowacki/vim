@@ -2,6 +2,11 @@
 My vim config repository.
 
 ## Things to do first
+### Install Vundle
+```
+$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
 ### Install fuzzy finder binary
 ```
 $ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
