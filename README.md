@@ -10,5 +10,7 @@ $ ~/.fzf/install
 
 ## Things to do after .vimrc copied/symlinked
 ### Install all the plugins
-In the vim call `:PluginInstall`. And anytime in the future you modify the list of plugins or want to update their versions,
-call `:PluginUpdate`. If you remove any plugin from the list, call `:PluginClean` to delete the files from the filesystem.
+In the vim call `:PluginInstall`. And anytime in the future you modify the list
+of plugins or want to update their versions, call `:PluginUpdate`. If you remove
+any plugin from the list, call `:PluginClean` to delete the files from the
+filesystem.
