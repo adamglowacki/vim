@@ -51,6 +51,18 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+" Show non-breaking space (https://stackoverflow.com/a/50751223/8019153)
+set list
+set listchars=tab:→\ ,nbsp:␣
+
+" Moving lines up/down (https://vim.fandom.com/wiki/Moving_lines_up_or_down)
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+inoremap <C-j> <Esc>:m .+1<CR>==gi
+inoremap <C-k> <Esc>:m .-2<CR>==gi
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
+
 " Searching multiple phrases at the same time
 nmap ,m :Search 
 nmap ,r :SearchReset<CR>
