@@ -1,7 +1,7 @@
 set nocompatible
 filetype off
 
-call plug#begin()
+call plug#begin('~/.vim/plugged')
 Plug 'ericcurtin/CurtineIncSw.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
