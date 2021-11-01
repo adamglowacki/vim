@@ -19,3 +19,19 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 In the vim call `:PlugInstall`. And anytime in the future you modify the list of
 plugins or want to update their versions, call `:PlugUpdate`. If you remove any
 plugin from the list, call `:PlugClean` to delete the files from the filesystem.
+
+### Configure CoC plugin (if desired)
+Call `:CocConfig` and paste the configuration for each programming language that
+is needed:
+```
+{
+  "languageserver": {
+    "haskell": {
+      "command": "haskell-language-server-wrapper",
+      "args": ["--lsp"],
+      "rootPatterns": ["*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml"],
+      "filetypes": ["haskell", "lhaskell"]
+    }
+  }
+}
+```
