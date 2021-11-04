@@ -7,6 +7,7 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
+Plug 'purescript-contrib/purescript-vim'
 call plug#end()
 
 set softtabstop=2
