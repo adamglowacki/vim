@@ -6,7 +6,7 @@ Plug 'ericcurtin/CurtineIncSw.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'vim-airline/vim-airline'
+Plug 'itchyny/lightline.vim'
 Plug 'purescript-contrib/purescript-vim'
 call plug#end()
 
@@ -19,9 +19,7 @@ set encoding=utf-8
 set colorcolumn=81
 set hlsearch
 set scrolloff=5
-
-" powerline font
-let g:airline_powerline_fonts = 1
+set laststatus=2 " lightline
 
 " lhs comments
 map ,# :s/^/#/<CR>:nohlsearch<CR>
