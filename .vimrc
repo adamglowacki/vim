@@ -36,6 +36,11 @@ map ,* :s/^\(.*\)$/\/\* \1 \*\//<CR>:nohlsearch<CR>
 map ,( :s/^\(.*\)$/\(\* \1 \*\)/<CR>:nohlsearch<CR>
 map ,< :s/^\(.*\)$/<!-- \1 -->/<CR>:nohlsearch<CR>
 map ,d :s/^\([/(]\*\\|<!--\) \(.*\) \(\*[/)]\\|-->\)$/\2/<CR>:nohlsearch<CR>
+" vimgrep
+map [q :cprevious<CR>
+map q] :cnext<CR>
+map [Q :cfirst<CR>
+map Q] :clast<CR>
 
 " enable Backspace
 set bs=2
