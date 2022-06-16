@@ -8,6 +8,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
 Plug 'purescript-contrib/purescript-vim'
+Plug 'LnL7/vim-nix'
 call plug#end()
 
 set softtabstop=2
