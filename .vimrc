@@ -9,6 +9,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
 Plug 'purescript-contrib/purescript-vim'
 Plug 'LnL7/vim-nix'
+Plug 'flazz/vim-colorschemes'
 call plug#end()
 
 set softtabstop=2
@@ -21,6 +22,7 @@ set colorcolumn=81
 set hlsearch
 set scrolloff=5
 set laststatus=2 " lightline
+colorscheme diokai
 
 " lhs comments
 map ,# :s/^/#/<CR>:nohlsearch<CR>
