@@ -10,6 +10,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'purescript-contrib/purescript-vim'
 Plug 'LnL7/vim-nix'
 Plug 'flazz/vim-colorschemes'
+Plug 'fladson/vim-kitty'
 call plug#end()
 
 set softtabstop=2

@@ -3,16 +3,30 @@ My vim config repository.
 
 ## Things to do first
 ### Install vim-plug
+#### Vim
 ```
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
+#### Neovim
+No idea why but the config file (init.vim) is by default placed in
+~/.config/nvim directory, while the vim-plug is stored in ~/.local/share/nvim.
+The plugins installed by vim-plug are placed ~/.vim/plugged (see .vimrc).
+```
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
 
 ### Install fuzzy finder binary
+#### Manual
 ```
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
+
+### Symlink config file
+Symlink .vimrc either from ~/.vimrc or from the config file for Neovim (for
+example: ~/.local/share/nvim/init.vim).
 
 ## Things to do after .vimrc copied/symlinked
 ### Install all the plugins
@@ -35,3 +49,6 @@ is needed:
   }
 }
 ```
+
+### NodeJS
+CoC apparently requires nodejs for working.
