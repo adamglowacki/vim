@@ -50,5 +50,8 @@ is needed:
 }
 ```
 
+### Install other CoC plugins
+rust-analyzer: `:CocInstall coc-rust-analyzer`
+
 ### NodeJS
 CoC apparently requires nodejs for working.
