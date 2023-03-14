@@ -25,6 +25,9 @@ set scrolloff=5
 set laststatus=2 " lightline
 colorscheme diokai
 
+" use system clipboard (requires wl-paste/wl-copy on Wayland)
+set clipboard+=unnamedplus
+
 " lhs comments
 map ,# :s/^/#/<CR>:nohlsearch<CR>
 map ,/ :s/^/\/\//<CR>:nohlsearch<CR>
